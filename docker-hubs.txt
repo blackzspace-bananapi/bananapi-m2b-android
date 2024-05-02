@@ -1,0 +1,65 @@
+
+
+####### ANDROID 11 DOKCER HUB IMAGES
+
+
+
+
+# android-11 build-enviroment
+
+Dockerfile of this image
+
+https://github.com/BPI-SINOVOIP/bpi-build/tree/android-11
+
+Docker pull Command
+
+$ docker pull sinovoip/bpi-build-android-11:ubuntu20.04
+
+After pull the image, you can start a bash
+
+$ docker run --privileged -it --hostname android -v /media:/media -v /etc/localtime:/etc/localtime sinovoip/bpi-build-android-11:ubuntu20.04 /bin/bash
+
+
+# android-11-aml build-enviroment
+
+Dockerfile of this image
+
+https://github.com/BPI-SINOVOIP/bpi-build/tree/android-11-amlogic
+
+Docker pull Command
+
+$ docker pull sinovoip/bpi-build-aml-android-11:ubuntu16.04
+
+After pull the image, you can start a bash
+
+$ docker run --privileged -it --hostname android -v /media:/media -v /opt:/opt -v /etc/localtime:/etc/localtime sinovoip/bpi-build-aml-android-11:ubuntu16.04 /bin/bash
+
+
+
+
+
+
+
+######## ANDROID X Docker HUB Images
+
+
+
+Dockerfile of this image
+
+https://github.com/BPI-SINOVOIP/bpi-build/tree/android
+
+Docker pull Command
+
+$ docker pull sinovoip/bpi-build-android:a20_01
+
+After pull the image, you can start a bash
+
+$ docker run -t -i sinovoip/bpi-build-android:a20_01 /bin/bash
+
+or start a ssh to access the container
+
+$ docker run -d -p 2222:22 -v /media:/media sinovoip/bpi-build-android:a20_01
+
+on your host
+
+$ ssh -p 2222 root@127.0.0.1 //default passwd is root
